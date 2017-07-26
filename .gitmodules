@@ -1,0 +1,15 @@
+[submodule "thirdparty/rapidjson"]
+	path = thirdparty/rapidjson
+	url = https://github.com/miloyip/rapidjson.git
+[submodule "thirdparty/sole"]
+	path = thirdparty/sole
+	url = https://github.com/r-lyeh/sole.git
+[submodule "thirdparty/cryptopp"]
+	path = thirdparty/cryptopp
+	url = https://github.com/weidai11/cryptopp.git
+[submodule "thirdparty/spdlog"]
+	path = thirdparty/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "thirdparty/curl"]
+	path = thirdparty/curl
+	url = https://github.com/curl/curl.git

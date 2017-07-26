@@ -1,0 +1,8 @@
+{
+  "Version": "1.0",
+  "AccessKeyId": "YOUR_KEY_ID_HERE",
+  "AccessSecret" : "YOUR_SECRET_HERE",
+  "Domain" : "example.com",
+  "Target" : "www",
+  "TTL" : "600"
+}
