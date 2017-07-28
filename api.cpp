@@ -109,12 +109,12 @@ DomainRecord api::AliGeneral::queryRecords(const Configuration configuration) {
     Document document;
     document.Parse(buffer.c_str());
 
-    if (document.IsNull() || document["TotalCount"].IsNull() || document["TotalCount"].GetInt() == 0 ||
+    if (document.IsNull() || !document.IsObject() || document["TotalCount"].IsNull() || document["TotalCount"].GetInt() == 0 ||
         document["DomainRecords"].IsNull()) {
         return domainRecord;
     }
 
-    auto record = document["DomainRecords"].GetObject()["Record"].GetArray();
+    auto record =  document["DomainRecords"].GetObject()["Record"].GetArray();
     for (auto &v : record) {
 
         auto obj = v.GetObject();
